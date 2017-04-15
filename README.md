@@ -1,6 +1,8 @@
 # Mapping the ZK/U
 Interactive map of the Moabiter Stadtgarten around the ZK/U (Center for Art and Urbanistic).
 
+[*Demo*](https://zku.vogelino.com/)
+
 On this map, there are multiple layers of dimensions that you can show and hide in order to navigate through the different dimensions investigated on the field, such as sounds, zones, activities, trash repartition, etc.
 
 
