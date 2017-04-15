@@ -16,12 +16,11 @@
     "watch-styles": "npm run build-styles-dev -- -w",
     "build": "npm run build-styles-prod && next build",
     "dev": "npm run watch-styles & NODE_ENV='development' next",
-    "deploy": "now -e NODE_ENV=production",
-    "storybook": "npm run watch-styles & start-storybook -s ./static -p 6006",
-    "build-storybook": "build-storybook"
+    "deploy": "now -e NODE_ENV=production"
   },
   "dependencies": {
     "next": "^2.0.0",
+    "prop-types": "^15.5.8",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
