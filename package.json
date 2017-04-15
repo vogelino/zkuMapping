@@ -1,5 +1,5 @@
 {
-  "name": "ZK/U Mapping",
+  "name": "zkuMapping",
   "version": "1.0.0",
   "description": "Mapping different dimensions on the ZK/U park",
   "main": "index.js",
@@ -22,7 +22,8 @@
   },
   "dependencies": {
     "next": "^2.0.0",
-    "react": "^15.4.2",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
