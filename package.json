@@ -2,9 +2,9 @@
   "name": "zkuMapping",
   "version": "1.0.0",
   "description": "Mapping different dimensions on the ZK/U park",
-  "main": "index.js",
   "author": "vogelino <contact@vogelino.com>",
   "license": "MIT",
+  "repository": "https://github.com/FH-Potsdam/zkuMapping",
   "engines": {
     "yarn": "0.15.1",
     "node": "7.0.0"
