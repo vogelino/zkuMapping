@@ -4,7 +4,7 @@
   "description": "Mapping different dimensions on the ZK/U park",
   "author": "vogelino <contact@vogelino.com>",
   "license": "MIT",
-  "repository": "https://github.com/FH-Potsdam/zkuMapping",
+  "repository": "https://github.com/vogelino/zkuMapping",
   "engines": {
     "yarn": "0.15.1",
     "node": "7.0.0"
