@@ -1,0 +1,38 @@
+{
+  "name": "ZK/U Mapping",
+  "version": "1.0.0",
+  "description": "Mapping different dimensions on the ZK/U park",
+  "main": "index.js",
+  "author": "vogelino <contact@vogelino.com>",
+  "license": "MIT",
+  "engines": {
+    "yarn": "0.15.1",
+    "node": "7.0.0"
+  },
+  "scripts": {
+    "start": "next start",
+    "build-styles-prod": "node_modules/.bin/stylus -u nib ./styles/index.styl -c -o ./static/styles.css",
+    "build-styles-dev": "node_modules/.bin/stylus -u nib ./styles/index.styl -o ./static/styles.css",
+    "watch-styles": "npm run build-styles-dev -- -w",
+    "build": "npm run build-styles-prod && next build",
+    "dev": "npm run watch-styles & NODE_ENV='development' next",
+    "deploy": "now -e NODE_ENV=production",
+    "storybook": "npm run watch-styles & start-storybook -s ./static -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "next": "^2.0.0",
+    "react": "^15.4.2",
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.13.1",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0",
+    "nib": "^1.1.2",
+    "stylus": "^0.54.5"
+  },
+  "peerDependencies": {}
+}

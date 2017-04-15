@@ -1,0 +1,19 @@
+.link
+	font-family inherit
+	font-size inherit
+	line-height inherit
+	color $interactiveColor
+	letter-spacing inherit
+	font-weight inherit
+	cursor pointer
+	padding .03em .18em .15em .18em
+	transition all $slowDuration $smoothEasing
+	background rgba($interactiveColor,0)
+	linkUnderlines($backgroundColor, $interactiveColor)
+
+	&:hover
+		border-radius .12em
+		background rgba($interactiveColor,1)
+		linkUnderlines($interactiveColor, $backgroundColor)
+		background-image none
+

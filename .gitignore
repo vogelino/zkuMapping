@@ -1,0 +1,7 @@
+node_modules
+dist
+tmp
+.next
+npm-debug.log*
+static
+

@@ -1,0 +1,34 @@
+.multiline-title
+	display inline-block
+	clearfix()
+	position relative
+	padding-top .2em
+	text-transform uppercase
+
+	> div > div > span
+		display inline-block
+		padding .1em .2em .1em .2em
+		background-color $textColor
+		background-position 50% center
+		border-radius 1px
+		color $backgroundColor
+		margin-top -.2em
+		float left
+		letter-spacing .06em
+		transition color $slowDuration $smoothEasing, background-color $slowDuration $smoothEasing
+
+	> div:last-child > div > span
+		user-select none
+		color $textColor
+
+	&.interactive
+		color $interactiveColor
+		cursor pointer
+
+		> div:first-child > div > span
+			background $interactiveColor
+
+		&:hover
+			> div:first-child > div > span
+				background-color $interactiveHoverColor
+
