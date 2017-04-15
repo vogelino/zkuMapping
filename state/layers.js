@@ -13,7 +13,7 @@ export default [
 		description: 'Wo ist welcher Art von Müll im Park zu sehen?',
 		active: false,
 		path: 'layers/muell.svg',
-		color: '#3498db',
+		color: '#E5007E',
 	},
 	{
 		id: 'CC',
@@ -29,7 +29,7 @@ export default [
 		description: 'Wo im Park ist was zu hören?',
 		active: false,
 		path: 'layers/laerm.svg',
-		color: '#9b59b6',
+		color: '#E2001A',
 	},
 	{
 		id: 'EE',
@@ -37,7 +37,7 @@ export default [
 		description: 'Welcher alter haben die Besucher des Parks und wo werden sie verteilt?',
 		active: false,
 		path: 'layers/alter.svg',
-		color: '#e74c3c',
+		color: '#3498db',
 	},
 	{
 		id: 'FF',

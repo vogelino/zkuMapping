@@ -13,7 +13,7 @@ const SidebarOption = ({
 }) => (
 	<li
 		className={`sidebar-option ${active ? 'active' : ''}`}
-		id={id}
+		id={`sidebar-option-${id}`}
 		style={{ '--optioncolor': color }}
 		onClick={() => onChange(id)}
 		role="checkbox"
@@ -33,6 +33,29 @@ SidebarOption.propTypes = {
 	onChange: PropTypes.func.isRequired,
 };
 
+const MapLayer = ({
+	id,
+	active,
+	zIndex,
+	path,
+}) => (
+	<div
+		className={`map-layer ${active ? 'active' : ''}`}
+		id={`map-layer-${id}`}
+		style={{
+			zIndex,
+			backgroundImage: `url(/static/${path})`,
+		}}
+	/>
+);
+
+MapLayer.propTypes = {
+	id: PropTypes.string.isRequired,
+	path: PropTypes.string.isRequired,
+	active: PropTypes.bool.isRequired,
+	zIndex: PropTypes.number.isRequired,
+};
+
 class Home extends Component {
 	constructor(props) {
 		super(props);
@@ -48,6 +71,7 @@ class Home extends Component {
 		});
 	}
 	render() {
+		const { layers: layersArray } = this.state;
 		return (
 			<div className="main-container">
 				<Head>
@@ -56,7 +80,7 @@ class Home extends Component {
 				<aside className="sidebar">
 					<h3 className="sidebar-title">ZK/U Mapping</h3>
 					<ul className="sidebar-options">
-						{this.state.layers.map((layer) => (
+						{layersArray.map((layer) => (
 							<SidebarOption
 								key={layer.id}
 								onChange={(id) => this.toggleLayer(id)}
@@ -65,6 +89,16 @@ class Home extends Component {
 						))}
 					</ul>
 				</aside>
+				<article className="map-container">
+					<div className="map-background" />
+					{layersArray.map((layer, index) => (
+						<MapLayer
+							key={layer.id}
+							{...layer}
+							zIndex={index + 2}
+						/>
+					))}
+				</article>
 			</div>
 		);
 	}
