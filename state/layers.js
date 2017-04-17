@@ -8,9 +8,17 @@ export default [
 		color: '#1abc9c',
 	},
 	{
+		id: 'DD',
+		title: 'Lärm',
+		description: 'Wo im Park ist wie laut?',
+		active: false,
+		path: 'layers/laerm.svg',
+		color: '#E2001A',
+	},
+	{
 		id: 'BB',
 		title: 'Müll',
-		description: 'Wo ist welcher Art von Müll im Park zu sehen?',
+		description: 'Wo ist Müll im Park zu sehen?',
 		active: false,
 		path: 'layers/muell.svg',
 		color: '#E5007E',
@@ -22,14 +30,6 @@ export default [
 		active: false,
 		path: 'layers/aktivitaeten.svg',
 		color: '#2ecc71',
-	},
-	{
-		id: 'DD',
-		title: 'Lärm',
-		description: 'Wo im Park ist was zu hören?',
-		active: false,
-		path: 'layers/laerm.svg',
-		color: '#E2001A',
 	},
 	{
 		id: 'EE',
