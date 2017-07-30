@@ -2,7 +2,7 @@ export default [
 	{
 		id: 'AA',
 		title: 'Zonen',
-		description: 'Welche Bereiche gibt es in den Park und welcher Funktionen haben sie?',
+		description: 'Welche Bereiche gibt es im Park und welche Funktion haben sie?',
 		active: false,
 		path: 'layers/zonen.svg',
 		color: '#1abc9c',
@@ -10,7 +10,7 @@ export default [
 	{
 		id: 'DD',
 		title: 'Lärm',
-		description: 'Wo im Park ist wie laut?',
+		description: 'Wo im Park ist es wie laut?',
 		active: false,
 		path: 'layers/laerm.svg',
 		color: '#E2001A',
@@ -42,7 +42,7 @@ export default [
 	{
 		id: 'CC',
 		title: 'Alter',
-		description: 'Welcher alter haben die Besucher des Parks und wo werden sie verteilt?',
+		description: 'Welches Alter haben die Besucher des Parks und wo halten sie sich auf?',
 		active: false,
 		path: 'layers/alter.svg',
 		color: '#3498db',
@@ -50,7 +50,7 @@ export default [
 	{
 		id: 'FF',
 		title: 'Aktivitäten',
-		description: 'Wo werden welche Aktivitäten gemacht?',
+		description: 'Wo finden welche Form von Aktivitäten statt?',
 		active: false,
 		path: 'layers/aktivitaeten.svg',
 		color: '#2ecc71',

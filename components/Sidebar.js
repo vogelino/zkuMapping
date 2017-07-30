@@ -4,7 +4,6 @@ import SidebarOption from './SidebarOption';
 
 const Sidebar = ({ layers, onLayerToggle }) => (
 	<aside className="sidebar">
-		<h3 className="sidebar-title">ZK/U Mapping</h3>
 		<ul className="sidebar-options">
 			{layers.map((layer) => (
 				<SidebarOption
