@@ -12,7 +12,7 @@ const MapLayer = ({
 		id={`map-layer-${id}`}
 		style={{
 			zIndex,
-			backgroundImage: `url(/static/${path})`,
+			backgroundImage: `url(/${path})`,
 		}}
 	/>
 );

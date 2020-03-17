@@ -6,25 +6,21 @@
   "license": "MIT",
   "repository": "https://github.com/vogelino/zkuMapping",
   "engines": {
-    "yarn": "0.15.1",
-    "node": "7.0.0"
+    "node": "12.14.1"
   },
   "scripts": {
     "start": "next start",
-    "build-styles-prod": "node_modules/.bin/stylus -u nib ./styles/index.styl -c -o ./static/styles.css",
-    "build-styles-dev": "node_modules/.bin/stylus -u nib ./styles/index.styl -o ./static/styles.css",
-    "watch-styles": "npm run build-styles-dev -- -w",
-    "build": "npm run build-styles-prod && next build",
-    "dev": "npm run watch-styles & NODE_ENV='development' next",
-    "deploy": "now -e NODE_ENV=production"
+    "build": "next build",
+    "dev": "NODE_ENV='development' next"
   },
   "dependencies": {
-    "next": "^2.0.0",
-    "prop-types": "^15.5.8",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
+    "@zeit/next-stylus": "^1.0.1",
+    "next": "^9.3.1",
     "nib": "^1.1.2",
-    "stylus": "^0.54.5"
+    "prop-types": "^15.7.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "stylus": "^0.54.7"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",

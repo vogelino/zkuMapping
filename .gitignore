@@ -3,5 +3,4 @@ dist
 tmp
 .next
 npm-debug.log*
-static/styles.css
-
+.now

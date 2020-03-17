@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import Head from 'next/dist/lib/head';
+import Head from 'next/head';
 import layers from '../state/layers';
 import Sidebar from '../components/Sidebar';
 import LayersMap from '../components/LayersMap';
+import '../styles/index.styl';
 
 class Home extends Component {
 	constructor(props) {
@@ -22,9 +23,7 @@ class Home extends Component {
 		const { layers: layersArray } = this.state;
 		return (
 			<div className="main-container">
-				<Head>
-					<link rel="stylesheet" media="all" href="/static/styles.css" />
-				</Head>
+				<Head />
 				<Sidebar
 					layers={layersArray}
 					onLayerToggle={(layerId) => this.toggleLayer(layerId)}
