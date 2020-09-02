@@ -4,3 +4,4 @@ tmp
 .next
 npm-debug.log*
 .now
+.vercel

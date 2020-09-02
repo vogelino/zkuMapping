@@ -1,12 +1,12 @@
 {
-  "name": "zkuMapping",
+  "name": "zku-mapping",
   "version": "1.0.0",
-  "description": "Mapping different dimensions on the ZK/U park",
+  "description": "Mapping different dimensions on the ZKU park",
   "author": "vogelino <contact@vogelino.com>",
   "license": "MIT",
   "repository": "https://github.com/vogelino/zkuMapping",
   "engines": {
-    "node": "12.14.1"
+    "node": "12.18.3"
   },
   "scripts": {
     "start": "next start",
